@@ -25,11 +25,42 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Check if EmailJS is configured
+    const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
+    const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
+    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+
+    if (serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID' || publicKey === 'YOUR_PUBLIC_KEY') {
+      toast({
+        title: "Configuration Required",
+        description: "EmailJS needs to be configured. Please check the console for setup instructions.",
+        variant: "destructive",
+      });
+      console.log(`
+EmailJS Configuration Required:
+1. Sign up at https://www.emailjs.com/
+2. Create a service (Gmail, Outlook, etc.)
+3. Create an email template
+4. Replace the following in ContactSection.tsx:
+   - YOUR_SERVICE_ID with your actual service ID
+   - YOUR_TEMPLATE_ID with your actual template ID  
+   - YOUR_PUBLIC_KEY with your actual public key
+
+Template variables to use in EmailJS:
+- {{from_name}} - sender's name
+- {{from_email}} - sender's email
+- {{mobile}} - sender's mobile
+- {{message}} - sender's message
+- {{to_email}} - recipient email (cutegirlurja@gmail.com)
+      `);
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // Initialize EmailJS (you'll need to add your public key)
       const result = await emailjs.send(
-        'service_id', // Replace with your EmailJS service ID
-        'template_id', // Replace with your EmailJS template ID
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -37,8 +68,10 @@ const ContactSection = () => {
           message: formData.message,
           to_email: 'cutegirlurja@gmail.com'
         },
-        'your_public_key' // Replace with your EmailJS public key
+        publicKey
       );
+
+      console.log('EmailJS result:', result);
 
       toast({
         title: "Message Sent Successfully!",
@@ -47,9 +80,10 @@ const ContactSection = () => {
 
       setFormData({ name: '', email: '', mobile: '', message: '' });
     } catch (error) {
+      console.error('EmailJS error:', error);
       toast({
         title: "Error Sending Message",
-        description: "Please try again or contact us directly.",
+        description: "Please try again or contact us directly at kumarchemicalindustries@gmail.com",
         variant: "destructive",
       });
     } finally {
