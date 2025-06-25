@@ -30,7 +30,7 @@ const ContactSection = () => {
     const templateId = 'template_320j43v'; // Replace with your EmailJS template ID
     const publicKey = 'irUMNB5Gz4j7zT5Cv'; // Replace with your EmailJS public key
 
-    if (serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID' || publicKey === 'YOUR_PUBLIC_KEY') {
+    if (serviceId === 'service_zxsionr' || templateId === 'template_320j43v' || publicKey === 'irUMNB5Gz4j7zT5Cv') {
       toast({
         title: "Configuration Required",
         description: "EmailJS needs to be configured. Please check the console for setup instructions.",
