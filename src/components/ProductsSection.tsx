@@ -14,33 +14,33 @@ const ProductsSection = () => {
 
   const products = {
     industrial: [
-      { name: 'Mono / Di Ammonium Phosphate', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Tri Sodium Phosphate', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sodium Tri Poly Phosphate', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sodium Hexa Meta Phosphate', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Oxalic Acid', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sulfamic Acid / Descalent', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      { name: 'Mono / Di Ammonium Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
+      { name: 'Tri Sodium Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
+      { name: 'Sodium Tri Poly Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
+      { name: 'Sodium Hexa Meta Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
+      { name: 'Oxalic Acid', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
+      { name: 'Sulfamic Acid / Descalent', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' }
     ],
     specialty: [
-      { name: 'Aqua Soft', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sequestering / Chelating Agents', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Polyelectrolyte Flocculant', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Potassium Bi-Sulfate', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sodium Thio Sulfate (Pellets)', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sodium Gluconate / TBHQ', image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      { name: 'Aqua Soft', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
+      { name: 'Sequestering / Chelating Agents', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
+      { name: 'Polyelectrolyte Flocculant', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
+      { name: 'Potassium Bi-Sulfate', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
+      { name: 'Sodium Thio Sulfate (Pellets)', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
+      { name: 'Sodium Gluconate / TBHQ', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' }
     ],
     photography: [
-      { name: 'Sodium Thio Sulfate (Hypo) / Anhy.', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Potassium Ferro / Ferri Cyanide', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Sodium Acetate Pure / Anhydrous', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      { name: 'Sodium Thio Sulfate (Hypo) / Anhy.', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' },
+      { name: 'Potassium Ferro / Ferri Cyanide', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' },
+      { name: 'Sodium Acetate Pure / Anhydrous', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' }
     ],
     agro: [
-      { name: 'EDTA Acid / EDTA DI / Tetra Sodium', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Zinc EDTA / Zinc Oxide', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Ammonium / Sodium Molybdate', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Chelates of Zn, Cu, Mn, Fe', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Zinc / Magnesium / Ammon. Sulfate', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { name: 'Manganese / Copper Sulfate', image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      { name: 'EDTA Acid / EDTA DI / Tetra Sodium', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
+      { name: 'Zinc EDTA / Zinc Oxide', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
+      { name: 'Ammonium / Sodium Molybdate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
+      { name: 'Chelates of Zn, Cu, Mn, Fe', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
+      { name: 'Zinc / Magnesium / Ammon. Sulfate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
+      { name: 'Manganese / Copper Sulfate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' }
     ]
   };
 
