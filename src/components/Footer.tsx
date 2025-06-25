@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/56bde17c-aae8-403f-a0cf-bbf9ab3ef885.png" 
+                src="/lovable-uploads/b80749a9-45b1-4142-8ce2-6da05cf1832f.png" 
                 alt="KCL Chemicals Logo" 
-                className="h-10 w-auto mr-3 filter brightness-0 invert"
+                className="h-12 w-auto mr-3 filter brightness-0 invert"
               />
               <div>
                 <h3 className="text-xl font-bold">KCL Chemicals</h3>

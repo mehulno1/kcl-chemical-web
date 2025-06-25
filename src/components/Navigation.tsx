@@ -32,7 +32,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/56bde17c-aae8-403f-a0cf-bbf9ab3ef885.png" 
+              src="/lovable-uploads/b80749a9-45b1-4142-8ce2-6da05cf1832f.png" 
               alt="KCL Chemicals Logo" 
               className="h-10 w-auto mr-3"
             />

@@ -1,48 +1,66 @@
 
-import React, { useState } from 'react';
-import ProductCard from './ProductCard';
+import React from 'react';
 
 const ProductsSection = () => {
-  const [activeCategory, setActiveCategory] = useState('industrial');
-
   const categories = [
-    { id: 'industrial', name: 'Industrial Chemicals', icon: '🏭' },
-    { id: 'specialty', name: 'Specialty Chemicals', icon: '⚗️' },
-    { id: 'photography', name: 'Photography & X-Ray', icon: '📸' },
-    { id: 'agro', name: 'Agro Chemicals', icon: '🌱' }
+    {
+      id: 'industrial',
+      name: 'Industrial Chemicals',
+      icon: '🏭',
+      image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png',
+      description: 'High-quality industrial chemicals for manufacturing and processing applications',
+      products: [
+        'Mono / Di Ammonium Phosphate',
+        'Tri Sodium Phosphate',
+        'Sodium Tri Poly Phosphate',
+        'Sodium Hexa Meta Phosphate',
+        'Oxalic Acid',
+        'Sulfamic Acid / Descalent'
+      ]
+    },
+    {
+      id: 'specialty',
+      name: 'Specialty Chemicals',
+      icon: '⚗️',
+      image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png',
+      description: 'Specialized chemical solutions for unique industrial requirements',
+      products: [
+        'Aqua Soft',
+        'Sequestering / Chelating Agents',
+        'Polyelectrolyte Flocculant',
+        'Potassium Bi-Sulfate',
+        'Sodium Thio Sulfate (Pellets)',
+        'Sodium Gluconate / TBHQ'
+      ]
+    },
+    {
+      id: 'photography',
+      name: 'Photography & X-Ray Chemicals',
+      icon: '📸',
+      image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png',
+      description: 'Professional-grade chemicals for photography and medical imaging',
+      products: [
+        'Sodium Thio Sulfate (Hypo) / Anhy.',
+        'Potassium Ferro / Ferri Cyanide',
+        'Sodium Acetate Pure / Anhydrous'
+      ]
+    },
+    {
+      id: 'agro',
+      name: 'Agro Chemicals',
+      icon: '🌱',
+      image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png',
+      description: 'Agricultural chemicals and nutrients for enhanced crop productivity',
+      products: [
+        'EDTA Acid / EDTA DI / Tetra Sodium',
+        'Zinc EDTA / Zinc Oxide',
+        'Ammonium / Sodium Molybdate',
+        'Chelates of Zn, Cu, Mn, Fe',
+        'Zinc / Magnesium / Ammon. Sulfate',
+        'Manganese / Copper Sulfate'
+      ]
+    }
   ];
-
-  const products = {
-    industrial: [
-      { name: 'Mono / Di Ammonium Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
-      { name: 'Tri Sodium Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
-      { name: 'Sodium Tri Poly Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
-      { name: 'Sodium Hexa Meta Phosphate', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
-      { name: 'Oxalic Acid', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' },
-      { name: 'Sulfamic Acid / Descalent', image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png' }
-    ],
-    specialty: [
-      { name: 'Aqua Soft', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
-      { name: 'Sequestering / Chelating Agents', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
-      { name: 'Polyelectrolyte Flocculant', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
-      { name: 'Potassium Bi-Sulfate', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
-      { name: 'Sodium Thio Sulfate (Pellets)', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' },
-      { name: 'Sodium Gluconate / TBHQ', image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png' }
-    ],
-    photography: [
-      { name: 'Sodium Thio Sulfate (Hypo) / Anhy.', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' },
-      { name: 'Potassium Ferro / Ferri Cyanide', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' },
-      { name: 'Sodium Acetate Pure / Anhydrous', image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png' }
-    ],
-    agro: [
-      { name: 'EDTA Acid / EDTA DI / Tetra Sodium', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
-      { name: 'Zinc EDTA / Zinc Oxide', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
-      { name: 'Ammonium / Sodium Molybdate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
-      { name: 'Chelates of Zn, Cu, Mn, Fe', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
-      { name: 'Zinc / Magnesium / Ammon. Sulfate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' },
-      { name: 'Manganese / Copper Sulfate', image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png' }
-    ]
-  };
 
   return (
     <section id="products" className="py-20 bg-gray-50">
@@ -57,32 +75,57 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center mb-12 gap-4">
+        {/* Product Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 ${
-                activeCategory === category.id
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
-              }`}
-            >
-              <span className="mr-2">{category.icon}</span>
-              {category.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products[activeCategory as keyof typeof products].map((product, index) => (
-            <ProductCard
-              key={index}
-              name={product.name}
-              image={product.image}
-            />
+            <div key={category.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={category.image}
+                  alt={category.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
+                  <span className="mr-2">{category.icon}</span>
+                  {category.name}
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {category.name}
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  {category.description}
+                </p>
+                
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Key Products:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    {category.products.slice(0, 4).map((product, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-blue-600 mr-2">•</span>
+                        {product}
+                      </li>
+                    ))}
+                    {category.products.length > 4 && (
+                      <li className="text-blue-600 font-medium">
+                        +{category.products.length - 4} more products
+                      </li>
+                    )}
+                  </ul>
+                </div>
+                
+                <div className="flex justify-between items-center pt-4 border-t border-gray-200">
+                  <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                    Net WT.: 25 KG
+                  </span>
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
 

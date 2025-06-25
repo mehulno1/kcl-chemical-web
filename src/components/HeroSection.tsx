@@ -26,9 +26,9 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <img 
-            src="/lovable-uploads/56bde17c-aae8-403f-a0cf-bbf9ab3ef885.png" 
+            src="/lovable-uploads/b80749a9-45b1-4142-8ce2-6da05cf1832f.png" 
             alt="KCL Chemicals Logo" 
-            className="h-24 w-auto mx-auto mb-6 filter brightness-0 invert"
+            className="h-32 w-auto mx-auto mb-6"
           />
         </div>
         
