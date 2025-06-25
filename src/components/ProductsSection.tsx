@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ProductsSection = () => {
@@ -7,7 +6,7 @@ const ProductsSection = () => {
       id: 'industrial',
       name: 'Industrial Chemicals',
       icon: '🏭',
-      image: '/lovable-uploads/eb4248ec-ad2c-4528-9ccf-ac087c85c1f5.png',
+      image: '/lovable-uploads/ad375cf8-f674-4b6f-9271-caae0863bdc0.png',
       description: 'High-quality industrial chemicals for manufacturing and processing applications',
       products: [
         'Mono / Di Ammonium Phosphate',
@@ -22,7 +21,7 @@ const ProductsSection = () => {
       id: 'specialty',
       name: 'Specialty Chemicals',
       icon: '⚗️',
-      image: '/lovable-uploads/0c272eae-4e79-4346-a2e8-4d8b11d8c822.png',
+      image: '/lovable-uploads/16950b1a-0868-497b-a550-24772421cc25.png',
       description: 'Specialized chemical solutions for unique industrial requirements',
       products: [
         'Aqua Soft',
@@ -37,7 +36,7 @@ const ProductsSection = () => {
       id: 'photography',
       name: 'Photography & X-Ray Chemicals',
       icon: '📸',
-      image: '/lovable-uploads/21bbfedf-7e2e-4eee-951a-d178e008659c.png',
+      image: '/lovable-uploads/1d1a6e62-5664-48b9-9706-41ec31a80e2b.png',
       description: 'Professional-grade chemicals for photography and medical imaging',
       products: [
         'Sodium Thio Sulfate (Hypo) / Anhy.',
@@ -49,7 +48,7 @@ const ProductsSection = () => {
       id: 'agro',
       name: 'Agro Chemicals',
       icon: '🌱',
-      image: '/lovable-uploads/7ab10c24-197a-4b96-ba9a-84960f079317.png',
+      image: '/lovable-uploads/a1275986-fc04-49d3-8cb9-b83ff1572346.png',
       description: 'Agricultural chemicals and nutrients for enhanced crop productivity',
       products: [
         'EDTA Acid / EDTA DI / Tetra Sodium',
