@@ -26,9 +26,9 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     // Check if EmailJS is configured
-    const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
-    const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
-    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+    const serviceId = 'service_zxsionr'; // Replace with your EmailJS service ID
+    const templateId = 'template_320j43v'; // Replace with your EmailJS template ID
+    const publicKey = 'irUMNB5Gz4j7zT5Cv'; // Replace with your EmailJS public key
 
     if (serviceId === 'YOUR_SERVICE_ID' || templateId === 'YOUR_TEMPLATE_ID' || publicKey === 'YOUR_PUBLIC_KEY') {
       toast({
