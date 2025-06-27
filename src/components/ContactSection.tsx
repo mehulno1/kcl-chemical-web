@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import emailjs from 'emailjs-com';
@@ -27,10 +26,10 @@ const ContactSection = () => {
 
     // Check if EmailJS is configured
     const serviceId = 'service_zxsionr'; // Replace with your EmailJS service ID
-    const templateId = 'template_320j43v'; // Replace with your EmailJS template ID
+    const templateId = 'template_5xs839f'; // Replace with your EmailJS template ID
     const publicKey = 'irUMNB5Gz4j7zT5Cv'; // Replace with your EmailJS public key
 
-    if (serviceId === 'service_zxsionr' || templateId === 'template_320j43v' || publicKey === 'irUMNB5Gz4j7zT5Cv') {
+    if (serviceId === 'service_zxsionr' || templateId === 'template_5xs839f' || publicKey === 'irUMNB5Gz4j7zT5Cv') {
       toast({
         title: "Configuration Required",
         description: "EmailJS needs to be configured. Please check the console for setup instructions.",
@@ -108,8 +107,11 @@ Template variables to use in EmailJS:
           {/* Contact Form */}
           <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              action="https://formspree.io/f/mdkzpjkj"
+              method="POST"
+              className="space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Full Name *
@@ -118,8 +120,6 @@ Template variables to use in EmailJS:
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Your full name"
@@ -134,8 +134,6 @@ Template variables to use in EmailJS:
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="your.email@example.com"
@@ -150,8 +148,6 @@ Template variables to use in EmailJS:
                   type="tel"
                   id="mobile"
                   name="mobile"
-                  value={formData.mobile}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="+91 9876543210"
@@ -165,8 +161,6 @@ Template variables to use in EmailJS:
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -176,10 +170,9 @@ Template variables to use in EmailJS:
 
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                Send Message
               </button>
             </form>
           </div>
@@ -188,7 +181,6 @@ Template variables to use in EmailJS:
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-600">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
-              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <MapPin className="text-blue-600 mt-1 flex-shrink-0" size={20} />
@@ -201,7 +193,6 @@ Template variables to use in EmailJS:
                     </p>
                   </div>
                 </div>
-
                 <div className="flex items-start space-x-4">
                   <Phone className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                   <div>
@@ -213,7 +204,6 @@ Template variables to use in EmailJS:
                     </p>
                   </div>
                 </div>
-
                 <div className="flex items-start space-x-4">
                   <Mail className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                   <div>
@@ -222,19 +212,9 @@ Template variables to use in EmailJS:
                   </div>
                 </div>
               </div>
-
               <div className="mt-8 p-4 bg-blue-50 rounded-lg">
                 <h4 className="font-semibold text-gray-800 mb-2">Contact Person</h4>
                 <p className="text-gray-600">Mr. Mehul Chovatia / Mrs. Hema Chovatia</p>
-              </div>
-            </div>
-
-            {/* Map Placeholder */}
-            <div className="bg-gray-200 rounded-lg shadow-lg h-64 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <MapPin size={48} className="mx-auto mb-2" />
-                <p>Interactive Map</p>
-                <p className="text-sm">Location: Kolkata, West Bengal</p>
               </div>
             </div>
           </div>

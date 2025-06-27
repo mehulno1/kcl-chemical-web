@@ -30,8 +30,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, image }) => {
             Net WT.: 25 KG
           </span>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-            Enquire Now
-          </button>
+Enquire Now
+</button>
         </div>
       </div>
     </div>

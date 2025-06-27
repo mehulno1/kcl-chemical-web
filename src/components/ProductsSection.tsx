@@ -6,7 +6,7 @@ const ProductsSection = () => {
       id: 'industrial',
       name: 'Industrial Chemicals',
       icon: '🏭',
-      image: '/lovable-uploads/ad375cf8-f674-4b6f-9271-caae0863bdc0.png',
+      image: '/lovable-uploads/Industrial Chemicals - Crop (1).png',
       description: 'High-quality industrial chemicals for manufacturing and processing applications',
       products: [
         'Mono / Di Ammonium Phosphate',
@@ -21,7 +21,7 @@ const ProductsSection = () => {
       id: 'specialty',
       name: 'Specialty Chemicals',
       icon: '⚗️',
-      image: '/lovable-uploads/16950b1a-0868-497b-a550-24772421cc25.png',
+      image: '/lovable-uploads/Speciality Chemicals - Crop.png',
       description: 'Specialized chemical solutions for unique industrial requirements',
       products: [
         'Aqua Soft',
@@ -36,7 +36,7 @@ const ProductsSection = () => {
       id: 'photography',
       name: 'Photography & X-Ray Chemicals',
       icon: '📸',
-      image: '/lovable-uploads/1d1a6e62-5664-48b9-9706-41ec31a80e2b.png',
+      image: '/lovable-uploads/Photography & X - Ray Chemicals - Crop.png',
       description: 'Professional-grade chemicals for photography and medical imaging',
       products: [
         'Sodium Thio Sulfate (Hypo) / Anhy.',
@@ -48,14 +48,12 @@ const ProductsSection = () => {
       id: 'agro',
       name: 'Agro Chemicals',
       icon: '🌱',
-      image: '/lovable-uploads/a1275986-fc04-49d3-8cb9-b83ff1572346.png',
+      image: '/lovable-uploads/Agro Chemicals - Crop_1.png',
       description: 'Agricultural chemicals and nutrients for enhanced crop productivity',
       products: [
-        'EDTA Acid / EDTA DI / Tetra Sodium',
+        'EDTA Acid/EDTA DI/Tetra Sodium',
         'Zinc EDTA / Zinc Oxide',
         'Ammonium / Sodium Molybdate',
-        'Chelates of Zn, Cu, Mn, Fe',
-        'Zinc / Magnesium / Ammon. Sulfate',
         'Manganese / Copper Sulfate'
       ]
     }
@@ -75,53 +73,51 @@ const ProductsSection = () => {
         </div>
 
         {/* Product Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {categories.map((category) => (
-            <div key={category.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center">
+            <div key={category.id} className="flex flex-col items-center">
+              <div className="mb-2">
+                <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center w-max mx-auto">
                   <span className="mr-2">{category.icon}</span>
                   {category.name}
                 </div>
               </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                  {category.name}
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  {category.description}
-                </p>
-                
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Key Products:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    {category.products.slice(0, 4).map((product, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-blue-600 mr-2">•</span>
-                        {product}
-                      </li>
-                    ))}
-                    {category.products.length > 4 && (
-                      <li className="text-blue-600 font-medium">
-                        +{category.products.length - 4} more products
-                      </li>
-                    )}
-                  </ul>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full w-full">
+                <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-                
-                <div className="flex justify-between items-center pt-4 border-t border-gray-200">
-                  <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                    Net WT.: 25 KG
-                  </span>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                    Enquire Now
-                  </button>
+                <div className="p-6 flex flex-col h-full">
+                  <h3
+                    className={
+                      "text-xl font-semibold text-gray-800 mb-3" +
+                      (category.id === "photography" ? " text-lg" : "")
+                    }
+                  >
+                    {category.name}
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    {category.description}
+                  </p>
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Key Products:</h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      {category.products.slice(0, 4).map((product, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-blue-600 mr-2">•</span>
+                          {product}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="mt-auto flex justify-between items-center pt-4 border-t border-gray-200">
+                    <span className="text-semibold text-white-500 bg-blue-100 px-3 py-1 rounded-full mx-auto block text-center">
+                      Net WT.: 25 KG
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

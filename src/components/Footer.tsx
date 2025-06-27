@@ -13,31 +13,8 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="col-span-2">
-            <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/b80749a9-45b1-4142-8ce2-6da05cf1832f.png" 
-                alt="KCL Chemicals Logo" 
-                className="h-12 w-auto mr-3 filter brightness-0 invert"
-              />
-              <div>
-                <h3 className="text-xl font-bold">KCL Chemicals</h3>
-                <p className="text-sm text-gray-300">Kumar Chemical Industries</p>
-              </div>
-            </div>
-            <p className="text-gray-300 mb-4">
-              Trusted supplier of industrial and specialty chemicals across India for over 30 years. 
-              We provide quality chemicals with excellent technical support and supply chain management.
-            </p>
-            <div className="text-sm text-gray-300">
-              <p>📍 19A Paddapukur Road, Kolkata - 700020</p>
-              <p>📞 +91 9331052183 / 9339071662</p>
-              <p>📧 kumarchemicalindustries@gmail.com</p>
-            </div>
-          </div>
 
-          {/* Quick Links */}
+          
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -84,8 +61,6 @@ const Footer = () => {
               <li>Specialty Chemicals</li>
               <li>Photography & X-Ray</li>
               <li>Agro Chemicals</li>
-              <li>Water Treatment</li>
-              <li>Food Processing</li>
             </ul>
           </div>
         </div>

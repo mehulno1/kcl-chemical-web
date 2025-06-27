@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -35,17 +34,11 @@ const AboutSection = () => {
 
           <div className="space-y-6">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Specializations</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-20">Our Specializations</h3>
+              <p className="text-gray-600 leading-relaxed mb-8">
                 We offer wide range of Specialty chemicals, including Water Treatment Chemicals, Aquaculture Chemicals, Agro Chemicals, Industrial Chemicals, Plant Maintenance and Treatment Chemicals, Photography Chemicals, Food Chemicals, Pharmaceutical Raw Materials and various other Chemicals.
               </p>
-              
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <h4 className="font-semibold text-gray-800 mb-2">Contact Information</h4>
-                <p className="text-sm text-gray-600">📞 +91 9331052183 / 9339071662 / 9331052183</p>
-                <p className="text-sm text-gray-600">📧 kumarchemicalindustries@gmail.com</p>
-                <p className="text-sm text-gray-600">📍 19A PADDAPUKUR ROAD, GROUND FLOOR, OPP ANAND APARTMENTS, BHOWANIPORE, KOLKATA -700020</p>
-              </div>
+            
             </div>
           </div>
         </div>
