@@ -200,7 +200,6 @@ Template variables to use in EmailJS:
                     <p className="text-gray-600">
                       +91 9331052183<br />
                       +91 9339071662<br />
-                      +91 9331052183
                     </p>
                   </div>
                 </div>
