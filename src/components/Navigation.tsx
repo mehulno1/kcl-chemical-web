@@ -37,8 +37,7 @@ const Navigation = () => {
               className="h-10 w-auto mr-3"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-800">KCL Chemicals</h1>
-              <p className="text-xs text-gray-600">Kumar Chemical Industries</p>
+              <h1 className="text-xl font-bold text-gray-800">Kumar Chemical Industries</h1>
             </div>
           </div>
 
